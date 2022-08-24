@@ -1,0 +1,565 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.886);
+    }
+.weekdays{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    top: 25%;
+}
+#currentday{
+    color: rgb(178, 219, 255);
+    font-size: 200%;
+}
+.days{
+    color: aliceblue;
+    position: relative;
+    height: 15%;
+    width: 12%;
+    margin: 1.13% ;
+    text-align: center;
+    border-radius: 4%;
+    float: left;
+    
+}
+
+.days:hover{
+    background-color: rgba(58, 55, 55, 0.372);
+}
+.cancelbutton , .savebutton , .deletebutton ,  .closebutton{
+    background-color: rgba(178, 219, 255, 0.447);
+    position: relative;
+    color: aliceblue;
+    border: 0ch;
+    width: 50px;
+    height: 30px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15%;
+    
+}
+.hide{
+    display: none;
+}
+.NewModal , .deleteEvent{
+    width: 18%;
+    top: 27%;
+    left: 45%;
+    background-color: rgb(49, 47, 47);
+    height: 20%;
+    border-radius: 10px;
+    color: rgb(178, 219, 255);
+    position: absolute;
+    text-align: center;
+}
+p{
+    height: 40%;
+}
+.modalfollowup{
+    width: 25%;
+    top: 50%;
+    left: 40%;
+    background-color: rgb(49, 47, 47);
+    height: 20%;
+    border-radius: 10px;
+    color: rgb(178, 219, 255);
+    position: absolute;
+    text-align: center;
+    overflow: auto;
+}
+.day{
+    position: relative;
+    height: 7%;
+    width: 13%;
+    top : 15%;
+    margin: 1%;
+    font-size: 106%;
+    text-align: center;
+    }
+.dayevent{
+    color: rgb(178, 219, 255);
+    font-size: 70%;
+}
+@media (min-width : 1290px) {
+    .calender{
+    width: 900px;
+    top: 7%;
+    left: 22%;
+    background-color: rgba(49, 47, 47, 0.427);
+    height: 600px;
+    border-radius: 10px;
+    color: rgb(178, 219, 255);
+    display: flex;
+    position: absolute;
+   
+    }
+    .NewModal{
+        width: 15%;
+    }
+    h1{
+    top: 2%;
+    position: absolute;
+    left: 42%;
+    }
+
+    .right{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    position: absolute;
+    color: rgb(178, 219, 255);
+    left: 81.5%;
+    top: 40%;
+    text-align: center;
+
+    }
+    .left{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    color: rgb(178, 219, 255);
+    position: absolute;
+    left: 16%;
+    top: 40%;
+    text-align: center;
+    }
+}
+@media (max-width : 1290px) and (min-width:1211px)  {
+    .calender{
+    width: 70%;
+    top: 7%;
+    left: 19%;
+    background-color: rgba(49, 47, 47, 0.427);
+    height: 600px;
+    border-radius: 10px;
+    color: rgb(178, 219, 255);
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+   
+    }
+    h1{
+    top: 2%;
+    position: absolute;
+    left: 42%;
+    }
+
+    .right{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    position: absolute;
+    color: rgb(178, 219, 255);
+    right: 4%;
+    top: 40%;
+    text-align: center;
+
+    }
+    .left{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    color: rgb(178, 219, 255);
+    position: absolute;
+    left: 12%;
+    top: 40%;
+    text-align: center;
+    }
+}
+@media (max-width : 1211px) and (min-width:1033px)  {
+    .calender{
+    width: 70%;
+    top: 7%;
+    left: 15%;
+    background-color: rgba(49, 47, 47, 0.427);
+    height: 600px;
+    border-radius: 10px;
+    color: rgb(178, 219, 255);
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+   
+    }
+    h1{
+    top: 2%;
+    position: absolute;
+    left: 42%;
+    }
+    
+    .right{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    position: absolute;
+    color: rgb(178, 219, 255);
+    right: 4%;
+    top: 40%;
+    text-align: center;
+
+    }
+    .left{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    color: rgb(178, 219, 255);
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    text-align: center;
+    }
+}
+@media (max-width : 1033px) and (min-width : 630px) {
+    .calender{
+    width: 90%;
+    margin: 2% 0% 0% 4% ;
+    background-color: rgba(49, 47, 47, 0.427);
+    height: 600px;
+    border-radius: 10px;
+    color: rgb(178, 219, 255);
+    display: flex;
+    position: absolute;
+   
+    }
+    h1{
+    top: 2%;
+    position: absolute;
+    left: 42%;
+    }
+    
+    .day{
+    position: relative;
+    text-align: center;
+    width: 7%;
+    height: 2%;
+    top : 15%;
+    margin-top: 4%;
+    margin-right: 4%; 
+    margin-left: 3%;
+    }
+    .days{
+        color: aliceblue;
+        position: static;
+        height: 16%;
+        width: 12%;
+        margin: 1.13% ;
+        box-sizing: border-box;
+        text-align: right;
+        float: left;
+        
+    }
+    .right{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    position: absolute;
+    color: rgb(178, 219, 255);
+    right: 4%;
+    top: 86%;
+    text-align: center;
+
+    }
+    .left{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    color: rgb(178, 219, 255);
+    position: absolute;
+    left: 4%;
+    top: 86%;
+    text-align: center;
+    }
+    .cancelbutton , .savebutton , .deletebutton ,  .closebutton{
+        background-color: rgba(178, 219, 255, 0.447);
+        position: relative;
+        color: aliceblue;
+        border: 0ch;
+        width: 50px;
+        height: 30px;
+        font-size: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        border-radius: 15%;
+        
+    }
+    .NewModal , .deleteEvent{
+        width: 90%;
+        top: 27%;
+        left: 6%;
+        background-color: rgb(49, 47, 47);
+        height: 20%;
+        border-radius: 10px;
+        color: rgb(178, 219, 255);
+        position: absolute;
+        text-align: center;
+    }
+    .modalfollowup{
+        width: 80%;
+        top: 55%;
+        left: 10%;
+        background-color: rgb(49, 47, 47);
+        height: 20%;
+        border-radius: 10px;
+        color: rgb(178, 219, 255);
+        position: absolute;
+        text-align: center;
+        overflow: auto;
+    }
+    
+}
+@media (max-width : 630px) and (min-width :470px) {
+    .calender{
+    width: 96%;
+    background-color: rgba(49, 47, 47, 0.427);
+    height: 80%;
+    border-radius: 10px;
+    color: rgb(178, 219, 255);
+    display: flex;
+    position: absolute;
+   
+    }
+    h1{
+    top: 2%;
+    margin-left: 40%;
+    position: absolute;
+
+    }
+    
+    .day{
+    position: relative;
+    text-align: center;
+    width: 7%;
+    height: 2%;
+    top : 15%;
+    margin-top: 4%;
+    margin-right: 4%; 
+    margin-left: 3%;
+    font-size: 80%;
+    }
+    .days{
+        color: aliceblue;
+        position: static;
+        height: 17%;
+        width: 12%;
+        margin: 1.13% ;
+        box-sizing: border-box;
+        text-align: right;
+        float: left;
+        
+    }
+    .right{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    position: absolute;
+    color: rgb(178, 219, 255);
+    right: 4%;
+    top: 85%;
+    text-align: center;
+
+    }
+    .left{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    color: rgb(178, 219, 255);
+    position: absolute;
+    left: 4%;
+    top: 85%;
+    text-align: center;
+    }
+    .cancelbutton , .savebutton , .deletebutton ,  .closebutton{
+        background-color: rgba(178, 219, 255, 0.447);
+        position: relative;
+        color: aliceblue;
+        border: 0ch;
+        width: 50px;
+        height: 30px;
+        font-size: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        border-radius: 15%;
+        
+    }
+    .NewModal , .deleteEvent{
+        width: 90%;
+        top: 27%;
+        left: 6%;
+        background-color: rgb(49, 47, 47);
+        height: 20%;
+        border-radius: 10px;
+        color: rgb(178, 219, 255);
+        position: absolute;
+        text-align: center;
+    }
+    .modalfollowup{
+        width: 80%;
+        top: 55%;
+        left: 10%;
+        background-color: rgb(49, 47, 47);
+        height: 20%;
+        border-radius: 10px;
+        color: rgb(178, 219, 255);
+        position: absolute;
+        text-align: center;
+        overflow: auto;
+    }
+}
+@media (max-width : 470px) {
+    .calender{
+    width: 96%;
+    background-color: rgba(49, 47, 47, 0.427);
+    height: 80%;
+    border-radius: 10px;
+    color: rgb(178, 219, 255);
+    display: flex;
+    position: absolute;
+   
+    }
+    h1{
+    top: 2%;
+    left: 3%;
+    position: absolute;
+
+    }
+    
+    .day{
+    position: relative;
+    width: 5%;
+    height: 2%;
+    top : 15%;
+    text-align: left;
+    margin-top: 4%;
+    margin-right: 5%; 
+    margin-left: 4%;
+    font-size: 60%;
+    }
+    .days{
+        color: aliceblue;
+        position: static;
+        height: 19%;
+        width: 12%;
+        margin: 1.13% ;
+        box-sizing: border-box;
+        text-align: right;
+        float: left;
+        
+    }
+    .cancelbutton , .savebutton , .deletebutton ,  .closebutton{
+        background-color: rgba(178, 219, 255, 0.447);
+        position: relative;
+        color: aliceblue;
+        border: 0ch;
+        width: 50px;
+        height: 30px;
+        font-size: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        border-radius: 15%;
+        
+    }
+    .NewModal , .deleteEvent{
+        width: 90%;
+        top: 27%;
+        left: 6%;
+        background-color: rgb(49, 47, 47);
+        height: 20%;
+        border-radius: 10px;
+        color: rgb(178, 219, 255);
+        position: absolute;
+        text-align: center;
+    }
+    .modalfollowup{
+        width: 80%;
+        top: 50%;
+        left: 10%;
+        background-color: rgb(49, 47, 47);
+        height: 20%;
+        border-radius: 10px;
+        color: rgb(178, 219, 255);
+        position: absolute;
+        text-align: center;
+        overflow: auto;
+    }
+    .right{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    position: absolute;
+    color: rgb(178, 219, 255);
+    right: 4%;
+    top: 85%;
+    text-align: center;
+
+    }
+    .left{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0ch;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    font-size: 40px;
+    color: rgb(178, 219, 255);
+    position: absolute;
+    left: 4%;
+    top: 85%;
+    text-align: center;
+    }
+    #currentday{
+        color: rgb(178, 219, 255);
+        font-size: 140%;
+    }
+}
+button:hover{
+    background-color: rgba(49, 47, 47, 0.427);
+}
+.extras{
+    height: 90%;
+    top: 4%;
+    
+}
+.days2{
+    
+    height: 12%;
+    
+}
+
+
+
