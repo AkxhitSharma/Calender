@@ -343,7 +343,7 @@ p{
     height: 12%;
     
 }
-@media (max-width : 630px) and (min-width :450px) and (max-height : 730px) {
+@media (max-width : 630px) and (min-width :450px) {
     .calender{
     width: 96%;
     background-color: rgba(49, 47, 47, 0.427);
@@ -442,7 +442,7 @@ p{
     }
     .modalfollowup{
         width: 80%;
-        top: 55%;
+        top: 65%;
         left: 10%;
         background-color: rgb(49, 47, 47);
         height: 20%;
