@@ -429,7 +429,7 @@ p{
 
     .NewModal , .deleteEvent{
         width: 90%;
-        top: 27%;
+        top: 25%;
         left: 6%;
         background-color: rgb(49, 47, 47);
         height: 20%;
@@ -442,7 +442,7 @@ p{
     }
     .modalfollowup{
         width: 80%;
-        top: 65%;
+        top: 55%;
         left: 10%;
         background-color: rgb(49, 47, 47);
         height: 20%;
@@ -524,7 +524,7 @@ p{
     }
     .modalfollowup{
         width: 80%;
-        top: 60%;
+        top: 55%;
         left: 10%;
         background-color: rgb(49, 47, 47);
         height: 20%;
