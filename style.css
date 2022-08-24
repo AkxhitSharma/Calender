@@ -335,7 +335,12 @@ p{
     }
     
 }
-@media (max-width : 630px) and (min-width :470px) {
+.days2{
+    
+    height: 12%;
+    
+}
+@media (max-width : 630px) and (min-width :450px) {
     .calender{
     width: 96%;
     background-color: rgba(49, 47, 47, 0.427);
@@ -348,7 +353,7 @@ p{
     }
     h1{
     top: 2%;
-    margin-left: 40%;
+    left: 4%;
     position: absolute;
 
     }
@@ -415,6 +420,9 @@ p{
         border-radius: 15%;
         
     }
+    h2{
+        margin-bottom: 0%;
+    }
     .NewModal , .deleteEvent{
         width: 90%;
         top: 27%;
@@ -425,6 +433,8 @@ p{
         color: rgb(178, 219, 255);
         position: absolute;
         text-align: center;
+        font-size: 100%;
+        float: left;
     }
     .modalfollowup{
         width: 80%;
@@ -438,8 +448,13 @@ p{
         text-align: center;
         overflow: auto;
     }
+    .days2{
+    
+        height: 15%;
+        
+    }
 }
-@media (max-width : 470px) {
+@media (max-width : 450px) {
     .calender{
     width: 96%;
     background-color: rgba(49, 47, 47, 0.427);
@@ -546,20 +561,16 @@ p{
         color: rgb(178, 219, 255);
         font-size: 140%;
     }
+    .days2{
+    
+        height: 15%;
+        
+    }
 }
 button:hover{
     background-color: rgba(49, 47, 47, 0.427);
 }
-.extras{
-    height: 90%;
-    top: 4%;
-    
-}
-.days2{
-    
-    height: 12%;
-    
-}
+
 
 
 
