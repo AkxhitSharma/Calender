@@ -343,7 +343,7 @@ p{
     height: 12%;
     
 }
-@media (max-width : 630px) and (min-width :450px) {
+@media (max-width : 630px) and (min-width :450px) and (max-height : 730px) {
     .calender{
     width: 96%;
     background-color: rgba(49, 47, 47, 0.427);
