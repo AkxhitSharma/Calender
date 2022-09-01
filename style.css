@@ -3,7 +3,7 @@
     height: 100%;
 }
 body{
-    background-color: rgba(0, 0, 0, 0.886);
+    background-color: rgba(10, 10, 10, 0.923);
     }
 .weekdays{
     position: absolute;
@@ -12,7 +12,7 @@ body{
     top: 25%;
 }
 #currentday{
-    color: rgb(178, 219, 255);
+    color: #83c7ff;
     font-size: 200%;
 }
 .days{
@@ -87,10 +87,10 @@ p{
 }
 @media (min-width : 1290px) {
     .calender{
-    width: 900px;
-    top: 7%;
-    left: 22%;
-    background-color: rgba(49, 47, 47, 0.427);
+    width: 60%;
+    top: 18%;
+    left: 8%;
+    background-color: rgba(49, 47, 47, 0.719);
     height: 600px;
     border-radius: 10px;
     color: rgb(178, 219, 255);
@@ -116,7 +116,7 @@ p{
     font-size: 40px;
     position: absolute;
     color: rgb(178, 219, 255);
-    left: 81.5%;
+    left: 72%;
     top: 40%;
     text-align: center;
 
@@ -130,9 +130,22 @@ p{
     font-size: 40px;
     color: rgb(178, 219, 255);
     position: absolute;
-    left: 16%;
+    left:1%;
     top: 40%;
     text-align: center;
+    }
+    .modalfollowup{
+        width: 18%;
+        top: 7%;
+        left: 78%;
+        background-color: rgb(49, 47, 47);
+        height: 80%;
+        border-radius: 10px;
+        color: rgb(178, 219, 255);
+        position: absolute;
+        text-align: left;
+        overflow: auto;
+        display: block;
     }
 }
 @media (max-width : 1290px) and (min-width:1211px)  {
@@ -613,7 +626,9 @@ p{
 button:hover{
     background-color: rgba(49, 47, 47, 0.427);
 }
-
+li{
+    margin-top: 10%;
+}
 
 
 
