@@ -61,14 +61,14 @@ function load(){
         if(i > paddingdays){
             daysquare.innerHTML = i - paddingdays;
             const eventforDay = events.find(e=> e.date === `${month + 1}/${i - paddingdays}/${year}` );
+            const dayevent = document.createElement('div');
+            const eventchart = document.createElement('li');
             if(eventforDay){
-                const dayevent = document.createElement('div');
-                const eventchart = document.createElement('div');
                 dayevent.classList.add('dayevent');
                 daysquare.appendChild(dayevent);
                 modalfollowup.appendChild(eventchart);
                 dayevent.innerText = eventforDay.title;
-                eventchart.innerText = '  *  '+ eventforDay.date + ' ' +'  ->  ' + ' ' + eventforDay.title;
+                eventchart.innerText = 'Date = '+ eventforDay.date + ' ' +'||' + '  Event = ' + ' ' + eventforDay.title;
             }
             if(i - paddingdays === day && nav === 0 ){
                 daysquare.id= 'currentday';
@@ -122,10 +122,12 @@ function Eventdelete(){
 function initbutton(){
     document.querySelector('.right').addEventListener('click' , ()=>{
         nav++ ;
+        modalfollowup.innerHTML='';
         load();
     })
     document.querySelector('.left').addEventListener('click' , ()=>{
         nav-- ;
+        modalfollowup.innerHTML='';
         load();
     })
     document.querySelector('.cancelbutton').addEventListener('click' , closeModal);
