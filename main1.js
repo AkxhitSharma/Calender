@@ -9,7 +9,7 @@ const users = localStorage.getItem('users')?JSON.parse(localStorage.getItem('use
         if(loginid.value==='Akshit' && pass.value==='admin'){
             window.location = './calender.html';
         }
-        if(loginid.value===userinfo.id && pass.value===userinfo.password){
+        if(loginid.value === userinfo.id.value && pass.value === userinfo.password.value){
             window.location = './calender.html';
         }
         else{
