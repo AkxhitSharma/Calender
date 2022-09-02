@@ -14,7 +14,7 @@ function savecreds(){
     }
     const newbutton=document.createElement('button');
     div.appendChild(newbutton);
-    newbutton.innerText= 'Back';
+    newbutton.innerText= 'Log In';
     newbutton.addEventListener('click' , ()=>{
         window.location = './index.html';
     })
