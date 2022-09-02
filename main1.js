@@ -1,6 +1,7 @@
 const loginid= document.querySelector('#loginid');
 const pass= document.querySelector('#pass');
 const users = localStorage.getItem('users')?JSON.parse(localStorage.getItem('users')):[];
+location.reload();
 
 
 
