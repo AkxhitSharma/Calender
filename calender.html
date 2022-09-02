@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calender ">
+            <h1 id="displaymonth"></h1>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+            <div class="day">Sun</div>
+            <div class="weekdays"></div>
+        </div>
+        
+        <button class="right">></button>
+        <button class="left"><</button>
+
+    </div>
+
+    <div class="NewModal , hide">
+        <h2>Add New Event</h2>
+        <input id="eventTitleInput" placeholder=" Event Title"><br>
+        <button class="savebutton">Save</button>
+        <button class="cancelbutton">Cancel</button>
+    </div>
+    <ul class="modalfollowup , hide"></ul>
+    <div class="deleteEvent , hide">
+        <h2>Event</h2>
+        <p class="eventtext"></p>
+        <button class="deletebutton">Delete</button>
+        <button class="closebutton">Close</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
