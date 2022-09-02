@@ -8,11 +8,9 @@ const users = localStorage.getItem('users')?JSON.parse(localStorage.getItem('use
         const userinfo=users.find(e=> e.id=== loginid.value);
         if(loginid.value==='Akshit' && pass.value==='admin'){
             window.location = './calender.html';
-        }
-        if(loginid.value === userinfo.id.value && pass.value === userinfo.password.value){
+        }else if(loginid.value === userinfo.id && pass.value === userinfo.password){
             window.location = './calender.html';
-        }
-        else{
+        }else{
             alert('Please fill all the credential Correctly');
         }
     }
